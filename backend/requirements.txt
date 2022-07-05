@@ -1,0 +1,25 @@
+alembic @ file:///home/conda/feedstock_root/build_artifacts/alembic_1643780403162/work
+certifi==2021.10.8
+click @ file:///C:/ci/click_1646056762388/work
+colorama @ file:///tmp/build/80754af9/colorama_1607707115595/work
+Flask==1.1.2
+Flask-Cors @ file:///tmp/build/80754af9/flask-cors_1598886879133/work
+Flask-JWT-Extended @ file:///home/conda/feedstock_root/build_artifacts/flask-jwt-extended_1633720583408/work
+Flask-Login==0.5.0
+Flask-Migrate @ file:///home/conda/feedstock_root/build_artifacts/flask-migrate_1627821482519/work
+Flask-SQLAlchemy @ file:///home/conda/feedstock_root/build_artifacts/flask-sqlalchemy_1616102249273/work
+greenlet @ file:///D:/bld/greenlet_1635837009256/work
+importlib-metadata @ file:///D:/bld/importlib-metadata_1646003489140/work
+importlib-resources @ file:///home/conda/feedstock_root/build_artifacts/importlib_resources_1635615662634/work
+itsdangerous @ file:///tmp/build/80754af9/itsdangerous_1621432558163/work
+Jinja2 @ file:///tmp/build/80754af9/jinja2_1635780242639/work
+Mako @ file:///home/conda/feedstock_root/build_artifacts/mako_1637170539581/work
+MarkupSafe @ file:///C:/ci_310/markupsafe_1642084045935/work
+mysqlclient==2.1.0
+PyJWT @ file:///home/conda/feedstock_root/build_artifacts/pyjwt_1638819640841/work
+python-dotenv @ file:///home/conda/feedstock_root/build_artifacts/python-dotenv_1636649191224/work
+six==1.15.0
+SQLAlchemy @ file:///D:/bld/sqlalchemy_1646615618896/work
+Werkzeug @ file:///opt/conda/conda-bld/werkzeug_1645628268370/work
+wincertstore==0.2
+zipp @ file:///home/conda/feedstock_root/build_artifacts/zipp_1643828507773/work

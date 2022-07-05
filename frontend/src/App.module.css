@@ -1,0 +1,47 @@
+.App {
+  text-align: center;
+}
+
+.errorMsg {
+    background-color: salmon;
+    color: white;
+    font-weight: bold;
+    padding: 4px;
+    position: fixed;
+    top: 74px;
+    width: 100%;
+}
+
+.successMsg {
+    background-color: rgb(87, 206, 87);
+    color: white;
+    font-weight: bold;
+    padding: 4px;
+    position: fixed;
+    top: 74px;
+    width: 100%;
+}
+
+.show {
+    display: block;
+    opacity: 1;
+    -webkit-animation: cssAnimation 5s forwards; 
+    animation: cssAnimation 5s forwards;
+}
+
+.hide {
+    display: none;
+}
+
+/* #hideMe {
+} */
+@keyframes cssAnimation {
+    0%   {opacity: 1;}
+    90%  {opacity: 1;}
+    100% {opacity: 0;}
+}
+@-webkit-keyframes cssAnimation {
+    0%   {opacity: 1;}
+    90%  {opacity: 1;}
+    100% {opacity: 0;}
+}

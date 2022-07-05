@@ -1,0 +1,744 @@
+.flexSep {
+    display: flex;
+    flex-direction: row;
+    height: calc(100vh - 74px);
+}
+
+.sidebar {
+    width: 27%;
+    /* border: 2px solid red; */
+    background-color: rgba(245, 245, 245, 0.97);
+    height: 100%;
+    overflow-y: auto;
+    padding-bottom: 100px;
+    box-sizing: border-box;
+}
+
+.mainContent {
+    width: 73%;
+    /* border: 2px solid green; */
+    background-color: rgba(255, 255, 255, 0.96);
+    height: 100%;
+    text-align: left;
+    overflow-y: auto;
+    padding-bottom: 100px;
+    box-sizing: border-box;
+}
+
+.video {
+    width: 80%;
+    /* height: 100%; */
+}
+
+.courseLogo {
+    width: 100px;
+    height: 100px;
+    /* border: 2px solid black; */
+    border-radius: 1000px;
+    overflow: hidden;
+    margin: 15px auto 5px;
+}
+
+.stretch {
+    width: 100%;
+    height: 100%;
+}
+
+.courseName {
+    /* border: 1px solid black; */
+    padding: 3px;
+    margin: 0px 10px 5px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.module {
+    /* border: 2px solid black; */
+    text-align: left;
+    padding: 7px 15px;
+    margin: 10px 5px 2px;
+    border-radius: 5px;
+    background-color: rgb(251, 143, 29);
+    color: white;
+    font-weight: bold;
+}
+
+.section {
+    /* border: 2px solid black; */
+    padding: 5px 20px;
+    margin: 5px 10px;
+    text-align: left;
+    background-color: rgb(228, 228, 228);
+    color: rgb(59, 59, 59);
+    font-weight: bold;
+}
+
+.sectionTitle {
+    display: block;
+    padding: 10px 20px;
+    background-color: rgb(251, 173, 29);
+    color: white;
+    font-weight: bold;
+}
+
+.videoContainer {
+    /* background-color: black; */
+    color: white;
+    margin: 20px;
+    /* width: 720px;
+    height: 405px; */
+    box-sizing: border-box;
+}
+
+.noteAddSection {
+    margin: 20px;
+}
+
+.notes {
+    margin: 20px;
+}
+
+.updateAddSection {
+    margin: 20px;
+}
+
+.updates {
+    margin: 20px;
+}
+
+.noteAddMention {
+    display: block;
+    padding: 8px 10px;
+    font-weight: bold;
+    width: 80%;
+    margin: 10px 0;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-family: Tahoma, "Segoe UI", Geneva, Verdana, sans-serif;
+    border-bottom: 2px solid grey;
+}
+
+.noteEntryHead,
+.updateEntryHead {
+    display: block;
+    resize: none;
+    padding: 8px 15px;
+    font-weight: bold;
+    width: 80%;
+    margin: 10px 0;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-family: Tahoma, "Segoe UI", Geneva, Verdana, sans-serif;
+}
+
+.noteEntryContent,
+.updateEntryContent {
+    display: block;
+    resize: none;
+    padding: 8px 15px;
+    font-family: inherit;
+    font-weight: bold;
+    width: 80%;
+    margin: 10px 0;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-family: Tahoma, "Segoe UI", Geneva, Verdana, sans-serif;
+}
+
+.note {
+    padding: 10px;
+    border: 1px solid grey;
+    /* border-radius: 10px; */
+    width: 80%;
+    margin: 10px 0;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.update {
+    padding: 10px;
+    border: 2px solid black;
+    width: 80%;
+    margin: 10px 0;
+    box-sizing: border-box;
+}
+
+.note .timestamp {
+    float: right;
+    margin-left: 20px;
+    color: grey;
+    font-size: 80%;
+}
+.note .timestamp::before {
+    content: "@";
+}
+
+.note .heading {
+    font-weight: bold;
+    padding-bottom: 8px;
+    border-bottom: 2px solid grey;
+}
+
+.note .content {
+    padding: 8px;
+}
+
+.note:hover {
+    background-color: rgb(255, 249, 244);
+}
+
+.note:hover .contrast {
+    background-color: rgb(255, 210, 161);
+}
+
+.note:hover .timestamp {
+    color: rgb(38, 76, 134);
+    text-decoration: underline;
+}
+
+.savedNotesHead {
+    width: 80%;
+    border-bottom: 1px solid grey;
+    padding-bottom: 4px;
+    color: rgb(90, 90, 90);
+}
+
+.delete {
+    float: right;
+}
+
+.button {
+    padding: 5px 10px;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 3px;
+    background-color: rgb(100, 138, 10);
+    color: rgb(255, 251, 251);
+    cursor: pointer;
+    /* border-radius: ; */
+    transition: all 0.4s ease;
+    box-sizing: border-box;
+    border: 2px solid white;
+    margin: 0 2.5px;
+}
+
+.blue.solid {
+    background-color: rgb(10, 87, 138);
+}
+
+.teal.solid {
+    background-color: rgb(10, 134, 138);
+}
+
+.orange.solid {
+    background-color: rgb(236, 140, 36);
+}
+
+.red.solid {
+    background-color: rgb(211, 39, 39);
+}
+
+.blue.hollow {
+    border-color: rgb(10, 87, 138);
+    color: rgb(10, 87, 138);
+}
+
+.teal.hollow {
+    border-color: rgb(10, 134, 138);
+    color: rgb(10, 134, 138);
+}
+
+.orange.hollow {
+    border-color: rgb(236, 140, 36);
+    color: rgb(236, 140, 36);
+}
+
+.red.hollow {
+    border-color: rgb(211, 39, 39);
+    color: rgb(211, 39, 39);
+}
+
+.solid {
+    background-color: rgb(100, 138, 10);
+}
+
+.hollow {
+    background-color: transparent;
+}
+
+.contrast {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    color: black;
+}
+
+.contrast:hover {
+    background-color: rgb(255, 210, 161);
+}
+
+.green.solid:hover {
+    background-color: white;
+    color: rgb(100, 138, 10);
+    border: 2px solid rgb(100, 138, 10);
+}
+
+.blue.solid:hover {
+    background-color: white;
+    color: rgb(10, 87, 138);
+    border: 2px solid rgb(10, 87, 138);
+}
+
+.teal.solid:hover {
+    background-color: white;
+    color: rgb(10, 134, 138);
+    border: 2px solid rgb(10, 134, 138);
+}
+
+.orange.solid:hover {
+    background-color: white;
+    color: rgb(236, 140, 36);
+    border: 2px solid rgb(236, 140, 36);
+}
+
+.red.solid:hover {
+    background-color: white;
+    color: rgb(211, 39, 39);
+    border: 2px solid rgb(211, 39, 39);
+}
+
+.blue.hollow:hover {
+    background-color: rgb(10, 87, 138);
+    color: white;
+    border: 2px solid white;
+}
+
+.teal.hollow:hover {
+    background-color: rgb(10, 134, 138);
+    color: white;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.orange.hollow:hover {
+    background-color: rgb(236, 140, 36);
+    color: white;
+    border: 2px solid rgb(236, 140, 36);
+}
+
+.red.hollow:hover {
+    background-color: rgb(211, 39, 39);
+    color: white;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.stretch {
+    width: 100%;
+    height: 100%;
+}
+
+.chatBox {
+    position: fixed;
+    bottom: 15px;
+    right: 40px;
+    width: 25%;
+}
+
+.chatBtn.solid {
+    color: white;
+    font-weight: bold;
+    padding: 10px 40px;
+    animation-name: example;
+    animation-duration: 1s;
+    text-align: center;
+    animation-iteration-count: infinite;
+    border: 3px solid transparent;
+}
+
+.chatBtn.solid:hover {
+    animation-duration: 0s;
+    border: 3px solid rgb(236, 140, 36);
+}
+
+@keyframes example {
+    0% {
+        background-color: rgb(238, 86, 59);
+    }
+    50% {
+        background-color: rgb(236, 140, 36);
+    }
+    100% {
+        background-color: rgb(238, 86, 59);
+    }
+}
+
+.note {
+    padding: 10px;
+    border: 1px solid grey;
+    /* border-radius: 10px; */
+    width: 80%;
+    margin: 10px 0;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.update {
+    padding: 10px;
+    border: 2px solid black;
+    width: 80%;
+    margin: 10px 0;
+    box-sizing: border-box;
+}
+
+.update .timestamp {
+    float: right;
+    margin-left: 20px;
+    color: grey;
+    font-size: 80%;
+}
+.update .timestamp::before {
+    content: "@";
+}
+
+.update .heading {
+    font-weight: bold;
+    padding-bottom: 8px;
+    border-bottom: 2px solid grey;
+}
+
+.update .content {
+    padding: 8px;
+}
+
+.floatLeft {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.editBtn {
+    margin: 10px auto;
+    display: block;
+    width: 80%;
+}
+
+.editAction {
+    margin: 10px auto;
+    display: inline-block;
+    width: 40%;
+}
+
+.editText {
+    margin: 20px auto 10px;
+    display: block;
+    width: 80%;
+    border: none;
+    border-bottom: 2px solid grey;
+    padding: 5px 10px;
+    font: inherit;
+}
+
+.editText:focus {
+    border-bottom: 2px solid orange;
+    outline: none;
+}
+
+.chatPlace {
+    border: 2px solid orange;
+    border-top: none;
+    height: 400px;
+    background-color: rgba(255, 255, 255, 0.931);
+    display: flex;
+    flex-direction: column;
+}
+
+.opened {
+    display: flex;
+    height: 400px;
+}
+
+.closed {
+    height: 0px;
+    display: none;
+    border: none;
+}
+
+.msgs {
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    overflow-y: auto;
+}
+
+.msg {
+    padding: 5px 20px;
+    border-radius: 10px;
+    margin: 5px 10px;
+    display: block;
+    clear: both;
+    background-color: rgb(250, 210, 136);
+}
+
+.msg.sent {
+    background-color: rgb(250, 210, 136);
+    float: right;
+    clear: both;
+}
+
+.msg.got {
+    background-color: rgb(250, 163, 136);
+    float: left;
+    clear: both;
+}
+
+.msg.hidden {
+    background-color: transparent;
+    padding: 2px;
+}
+
+.newMsg {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    border-top: 2px solid rgb(192, 192, 192);
+}
+
+.inputMsg {
+    margin: 0 10px;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid rgb(243, 232, 207);
+    padding: 5px 10px;
+    font: inherit;
+}
+
+.inputMsg:focus {
+    background-color: rgb(240, 255, 221);
+    border-bottom: 2px solid orange;
+    outline: none;
+}
+
+.newMsg .button.sendBtn {
+    margin: 0;
+    height: 100%;
+}
+
+.coursesList {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    /* background-color: grey; */
+    margin: 20px 5%;
+}
+
+.courseBlock {
+    display: inline-block;
+    width: 23%;
+    margin: 10px 1%;
+}
+
+.courseDetails {
+    background-color: rgb(251, 143, 29);
+    color: white;
+    padding: 5px 10px;
+    text-align: left;
+}
+
+.courseImgCover {
+    background-color: rgb(247, 226, 210);
+    height: 200px;
+}
+
+.courseCoverName {
+    font-weight: bold;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.courseSir { 
+    width: 100%;
+    font-size: 80%;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.newCourse {
+    font-size: 105%;
+}
+
+.homepage {
+    padding: 20px 10px;
+    background-color: rgba(250, 243, 240, 0.965);
+    height: calc(100vh - 74px);
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+.centerHome {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0;
+}
+
+.coverImgFull{
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-image: url("./bg.jpg");
+    background-size: 100%;
+    background-attachment: scroll;
+}
+
+.authBox {
+    display: block;
+    width: 25%;
+    background-color: rgb(231, 161, 133);
+    border-radius: 10px;
+    margin: 20px 0 0;
+}
+
+.brandBox {
+    padding: 10px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+.brandLogo {
+    width: 20%;
+}
+
+.brandName {
+    font-size: 115%;
+    color: rgb(110, 57, 57);
+    font-weight: bold;
+}
+
+.formBox {
+    margin-bottom: 40px;
+}
+
+.authEntry {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    font-size: inherit;
+    padding: 5px 2px;
+    background-color: transparent;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid rgb(110, 57, 57);
+    margin-bottom: 15px;
+}
+
+.authError {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    font-size: inherit;
+    padding: 5px 2px;
+    background-color: transparent;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+    color: rgb(202, 10, 10);
+    font-weight: bold;
+}
+
+.authSuccess {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    font-size: inherit;
+    padding: 5px 2px;
+    background-color: transparent;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+    color: rgb(21, 126, 52);
+    font-weight: bold;
+}
+
+.authEntry:focus {
+    outline: none;
+    border-bottom: 2px solid rgb(32, 63, 146);
+}
+
+.smallHeadEntry {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    padding: 2px 2px;
+    font-size: 75%;
+    text-align: left;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+.button.authSubmit {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    font-size: inherit;
+    background-color: transparent;
+    margin-top: 15px;
+}
+
+.button.authSubmit {
+    border-color: transparent;
+    background-color: rgb(110, 57, 57);
+}
+
+.button.authSubmit:hover {
+    background-color: transparent;
+    color: rgb(110, 57, 57);
+    border: 2px solid rgb(110, 57, 57);
+}
+
+.radioOption {
+    width: 44%;
+    display: inline-block;
+    font-size: inherit;
+    margin-bottom: 10px;
+}
+
+.show {
+    display: block;
+}
+
+.smallHeadEntry.hide {
+    display: none;
+}
+
+.courseNameBox {
+    border: 2px solid grey;
+    margin: 10px;
+    padding: 10px;
+    background-color: rgba(253, 184, 57, 0.253);
+    font: inherit;
+}
+
+.courseNameBox input {
+    background-color: transparent;
+    width: 80%;
+    box-sizing: border-box;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 2px 5px;
+}
+
+.courseNameBox .smallHeadEntry {
+    background-color: transparent;
+    width: 80%;
+    box-sizing: border-box;
+    padding: 2px 5px;
+    font-size: 75%;
+}
+
+.coverImgInput {
+    font-size: 90%;
+    text-align: left;
+    padding: 10px;
+}

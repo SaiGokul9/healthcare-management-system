@@ -1,0 +1,188 @@
+.header {
+    height: 70px;
+    position: sticky;
+    top: 0;
+    z-index: 1200;
+    align-items: center;
+    background-color: rgb(252, 245, 240);
+    border-bottom: 4px solid rgb(182, 101, 35);
+}
+
+.navbarLink {
+    display: inline-block;
+    /* padding: 10px; */
+}
+
+.missioned-nav {
+    font-size: 30px;
+    color: #ff6200;
+}
+
+.font-weight-bold {
+    font-weight: 700 !important;
+}
+
+.ed {
+    font-size: 30px;
+    color: #fa9917;
+}
+
+.classes {
+    font-size: 24px;
+    color: #fa3917;
+    margin-left: 5px;
+    font-style: oblique;
+}
+
+.ed,
+.missioned-nav {
+    opacity: 1;
+    letter-spacing: 2.86px;
+}
+
+.logo {
+    width: 48px;
+}
+
+.mr-auto,
+.mx-auto {
+    margin-right: 10px;
+}
+
+.mt-n4,
+.my-n4 {
+    /* margin-top: -0.8rem !important; */
+}
+
+img,
+svg {
+    vertical-align: middle;
+}
+
+img {
+    border-style: none;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    margin-right: 1rem;
+    line-height: inherit;
+    white-space: nowrap;
+}
+
+.navbar-default.scrolled {
+    /* background: #fff5e5; */
+    /* background-color: rgb(255, 245, 229); */
+    width: 100%;
+}
+
+.navbar-default {
+    /* transition: 0.5s ease; */
+    background: transparent;
+    width: 100%;
+}
+
+.bg-light {
+}
+
+.navbar-expand-xl {
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.navbar,
+.navbar .container,
+.navbar .container-fluid,
+.navbar .container-lg,
+.navbar .container-md,
+.navbar .container-sm,
+.navbar .container-xl {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar {
+    padding: 0.5rem 1rem;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.navlink {
+    color: red;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+    border-bottom: 2px solid transparent;
+    margin: 10px;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+}
+
+.navlink:hover {
+    border-bottom: 2px solid red;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.auth {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.userType {
+    text-transform: capitalize;
+}
+
+.userData {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    overflow: hidden;
+    width: 200px;
+    color: rgb(255, 60, 0);
+}
+
+.userData * {
+    color: rgb(255, 60, 0);
+}
+
+.userData a {
+    text-decoration: underline;
+    color: rgb(255, 60, 0);
+}
+
+.userAction {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.userName {
+    text-transform: capitalize;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: bold;
+}
